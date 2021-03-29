@@ -6,7 +6,7 @@ import { AgentOnboardingMemberInputCard } from './AgentOnboardingMemberInputCard
 describe('AgentOnboardingEmailSentCard', () => {
   it('should pass a simple a11y test', async () => {
     const { container } = render(
-    <AgentOnboardingMemberInputCard onSubmitMemberId={jest.fn()} />
+      <AgentOnboardingMemberInputCard onSubmitMemberId={jest.fn()} />
     );
 
     const results = await axe(container);

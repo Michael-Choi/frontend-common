@@ -23,3 +23,15 @@ export default {
 export const Default = () => (
     <AgentOnboardingMemberInputCard onSubmitMemberId={() => {}} />
 );
+
+export const EmailSent = () => (
+    <AgentOnboardingMemberInputCard emailSent={{ emailAddress: 'user@example.org' }} onSubmitMemberId={() => {}} />
+);
+
+export const DeactivatedAccountError = () => (
+    <AgentOnboardingMemberInputCard error={{ type: 'deactivated' }} onSubmitMemberId={() => {}} />
+);
+
+export const AccountExistsError = () => (
+    <AgentOnboardingMemberInputCard error={{ type: 'accountExists', info: 'Name of Existing Account'}} onSubmitMemberId={() => {}} />
+);

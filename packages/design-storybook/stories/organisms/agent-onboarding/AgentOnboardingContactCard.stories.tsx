@@ -3,14 +3,6 @@ import React from "react";
 import { Story } from '@storybook/react/types-6-0';
 import { AgentOnboardingContactCard, CenterWrapper, FocusedLayout } from '@brokerbay/design-components'
 
-/*
-import {
-    AgentOnboardingContactCard,
-    AgentOnboardingEmailSentCard,
-    AgentOnboardingMemberInputCard,
-} from '@brokerbay/design-components';
-*/
-
 // FIXME: move this into preview.js or something better
 import "../../antd.less";
 
@@ -28,6 +20,12 @@ export default {
   ]
 };
 
-export const Default = () => (
-    <AgentOnboardingContactCard />
+const noop = () => {};
+
+export const NoBrokerage = () => (
+    <AgentOnboardingContactCard noBrokerage onContactSales={noop} />
+);
+
+export const NoMemberId  = () => (
+    <AgentOnboardingContactCard noMemberId onContactSales={noop} />
 );

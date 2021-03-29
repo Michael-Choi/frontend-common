@@ -13,9 +13,7 @@ type DeactivatedErrorType = {
 
 type AccountExistsErrorType = {
   type: 'accountExists';
-  info: {
-      emailAddress: string;
-  };
+  info: string;
 };
 
 type ErrorType = AccountExistsErrorType | DeactivatedErrorType;
