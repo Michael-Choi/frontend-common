@@ -1,16 +1,16 @@
 import React from 'react';
 import { axe } from 'jest-axe';
 import { render } from '@testing-library/react'
-import { StyledLayout } from '..';
+import { FocusedLayout } from '.';
 
-describe('StyledLayout', () => {
+describe('FocusedLayout', () => {
     it('should pass a simple a11y test', async () => {
         const { container } = render(
-            <StyledLayout>
+            <FocusedLayout>
                 <div>
                     <p>Hello, world!</p>
                 </div>
-            </StyledLayout>
+            </FocusedLayout>
         )
 
         const results = await axe(container)

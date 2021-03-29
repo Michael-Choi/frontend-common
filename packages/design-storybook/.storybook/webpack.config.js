@@ -35,7 +35,7 @@ module.exports = async ({ config, mode }) => {
         loader: "less-loader",
         options: {
           additionalData: `
-            @import '~@brokerbay/design-storybook/stories/onboarding/theme.less';
+            @import '~@brokerbay/design-storybook/stories/theme.less';
           `,
           lessOptions: {
             // FIXME: do we need this?

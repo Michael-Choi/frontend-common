@@ -1,10 +1,7 @@
 import * as React from 'react';
 
-//
-// Onboarding
-//
-export { AgentOnboardingStepOne } from './onboarding'
-export { StyledLayout } from './StyledLayout';
+// layouts
+export { FocusedLayout } from './layouts/focused';
 
 // Delete me
 export const Thing = () => {

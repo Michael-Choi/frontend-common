@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { breakpoints } from '../theme';
+import { breakpoints } from '../../theme';
 
 import { SVGLogoV2 } from './SVGLogoV2';
 import { SVGFooter } from './SVGFooter';
 
-// FIXME: static asset extraction needs paths. Idea: create @brokerbay/design-assets and use like this
-import backgroundSvg from '@brokerbay/design-components/src/StyledLayout/background.svg';
+// FIXME: static asset extraction needs absolute paths. Idea: create @brokerbay/design-assets and use like this
+import backgroundSvg from '@brokerbay/design-components/static-assets/focused-background.svg';
 
-const StyledLayout: React.FC = ({ children }) => {
+export const FocusedLayout: React.FC = ({ children }) => {
   return (
     <StyledWrapper>
       <StyledHeaderLogo />
@@ -17,8 +17,6 @@ const StyledLayout: React.FC = ({ children }) => {
     </StyledWrapper>
   );
 };
-
-export default StyledLayout;
 
 const StyledHeaderLogo = styled(SVGLogoV2)`
   position: absolute;
